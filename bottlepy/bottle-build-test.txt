@@ -1,0 +1,20 @@
+# the buil size is impressive
+antonio@antolap5 ~/src/web/cythonweb/playground/bottlepy
+$ gcc -c -o libbottle.dll -Wall -I/usr/include/python3.6m bottle.c
+(cyweb-env)
+antonio@antolap5 ~/src/web/cythonweb/playground/bottlepy
+$ ls -lt
+total 17560
+-rw-rw-r--+ 1 antonio None 3710054 Jul  6 14:41 libbottle.dll
+-rw-rw-r--+ 1 antonio None 7409240 Jul  6 14:26 bottle.html
+-rw-rw-r--+ 1 antonio None 6859159 Jul  6 14:26 bottle.c
+(cyweb-env)
+antonio@antolap5 ~/src/web/cythonweb/playground/bottlepy
+$ strip libbottle.dll
+(cyweb-env)
+antonio@antolap5 ~/src/web/cythonweb/playground/bottlepy
+$ ls -lt
+total 16368
+-rw-rw-r--+ 1 antonio None 2487133 Jul  6 14:43 libbottle.dll
+-rw-rw-r--+ 1 antonio None 7409240 Jul  6 14:26 bottle.html
+-rw-rw-r--+ 1 antonio None 6859159 Jul  6 14:26 bottle.c
